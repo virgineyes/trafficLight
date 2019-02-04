@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--<meta http-equiv="refresh" content="10">-->
+    <title>權值股-紅綠燈</title>
+    <link rel="stylesheet" type="text/css" href="css/lightCart.css"/>
+    <script type="text/javascript" src="js/d3.min.v5.js"></script>
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+</head>
+   
+<body>
+    <div><h1>權值股-紅綠燈</h1></div>
+    <div id="left"><div class="downLightChart"> </div> </div>
+    <div id="context">
+    <div><p></p></div>
+    <div><p></p></div>
+    <div><p></p></div>
+    <div><p></p></div>
+       <table style="width:100%">
+          <tr>
+            <th height="68">權值股</th>
+            <th height="68">成交價</th> 
+            <th height="68">成交量</th>
+            <th height="68">漲跌</th>
+            <th style="display:none"></th>
+          </tr>
+          <tr>
+            <td>台積電</td>
+            <td><%=futureDataView.a2330[0]%></td> 
+            <td><%=futureDataView.a2330[1]%></td>
+            <td><%=futureDataView.a2330[2]%></td>
+            <td style="display:none"><%=futureDataView.a2330[3]%></td>
+          </tr>
+
+          <tr>
+            <td>鴻海</td>
+            <td><%=futureDataView.a2317[0]%></td> 
+            <td><%=futureDataView.a2317[1]%></td>
+            <td><%=futureDataView.a2317[2]%></td>
+            <td style="display:none"><%=futureDataView.a2317[3]%></td>
+          </tr>
+
+          <tr>
+            <td>台塑化</td>
+            <td><%=futureDataView.a6505[0]%></td> 
+            <td><%=futureDataView.a6505[1]%></td>
+            <td><%=futureDataView.a6505[2]%></td>
+            <td style="display:none"><%=futureDataView.a6505[3]%></td>
+          </tr>
+
+          <tr>
+            <td>中華電</td>
+            <td><%=futureDataView.a2412[0]%></td> 
+            <td><%=futureDataView.a2412[1]%></td>
+            <td><%=futureDataView.a2412[2]%></td>
+            <td style="display:none"><%=futureDataView.a2412[3]%></td>
+          </tr>
+
+          <tr>
+            <td>台塑</td>
+            <td><%=futureDataView.a1301[0]%></td> 
+            <td><%=futureDataView.a1301[1]%></td>
+            <td><%=futureDataView.a1301[2]%></td>
+            <td style="display:none"><%=futureDataView.a1301[3]%></td>
+          </tr>
+
+          <tr>
+            <td>台化</td>
+            <td><%=futureDataView.a1326[0]%></td> 
+            <td><%=futureDataView.a1326[1]%></td>
+            <td><%=futureDataView.a1326[2]%></td>
+            <td style="display:none"><%=futureDataView.a1326[3]%></td>
+          </tr>
+
+          <tr>
+            <td>南亞</td>
+            <td><%=futureDataView.a1303[0]%></td> 
+            <td><%=futureDataView.a1303[1]%></td>
+            <td><%=futureDataView.a1303[2]%></td>
+            <td style="display:none"><%=futureDataView.a1303[3]%></td>
+          </tr>
+
+          <tr>
+            <td>國泰金</td>
+            <td><%=futureDataView.a2882[0]%></td> 
+            <td><%=futureDataView.a2882[1]%></td>
+            <td><%=futureDataView.a2882[2]%></td>
+            <td style="display:none"><%=futureDataView.a2882[3]%></td>
+          </tr>
+          <tr>
+            <td>大立光</td>
+            <td><%=futureDataView.a3008[0]%></td> 
+            <td><%=futureDataView.a3008[1]%></td>
+            <td><%=futureDataView.a3008[2]%></td>
+            <td style="display:none"><%=futureDataView.a3008[3]%></td>
+          </tr>
+          <tr>
+            <td>富邦金</td>
+            <td><%=futureDataView.a2881[0]%></td> 
+            <td><%=futureDataView.a2881[1]%></td>
+            <td><%=futureDataView.a2881[2]%></td>
+            <td style="display:none"><%=futureDataView.a2881[3]%></td>
+          </tr>
+        </table>
+    </div>
+    <div id="right"><div class="upLightChart"> </div> </div>
+    <div id="upTrafficLightView" style="visibility:hidden"><%=upTrafficLightView%></div>
+    <div id="downTrafficLightView" style="visibility:hidden"><%=downTrafficLightView%></div>
+    <script type="text/javascript" src="js/lightCart.js"></script>
+    <script type="text/javascript" src="js/dataView.js"></script>
+</body>
+</html>
